@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Inter;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F5FF;
+}
+
+.container {
+    width: 960px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+
+}
+
+.products {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.product {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 24px 32px;
+    gap: 24px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.productImg img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.productText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.productImg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.titleSpan {
+    color: #363636;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.arrow {
+    width: 12px;
+}
+
+.stockSpan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width: 45px;
+    height: 23px;
+    border-radius: 16px;
+    background: #F2F5FF;
+    color: #657DD0;
+    font-size: 12px;
+}
+
+.category {
+    position: absolute;
+    bottom: 0;
+    color: #363636;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.compare,
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productText {
+    overflow: hidden;
+    color: #363636;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 28px;
+    border-right: 1px solid #ececec;
+
+}
+
+.productInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 38px;
+    background: var(--green-CTA, #1AB76C);
+    border: none;
+    color: #fff;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 50px;
+}
+.inputDiv{width: 100%;display: flex;
+align-items: center;
+justify-content:space-between;background-color: #F2F5FF;padding: 20px;}
+input{width: 356px;
+    height: 48px;padding: 15px;outline: none;
+    border-radius: 15px;border: none;background-color: #ececec;}
+.rating .left {
+    color: #1AB76C;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+
+    line-height: 29px;
+}
+
+.rating .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgScore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.imgScore img {
+    width: 15px;
+    height: 15px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+}
+
+.compare {
+    color: #363636;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    /* 133.333% */
+}
+
+.scoretxt {
+    color: #696969;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+.discount
+{position: absolute;padding: 8px;background-color: #F4A403;left:24px;border-radius: 5px;
+    color:  #FFF;
+    font-size: 14px;
+    font-weight: 700;}
+.discount span{border-left:2px solid white;padding: 4px;margin-left:4px ;}
+button a{color: white;}
